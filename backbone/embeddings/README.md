@@ -7,7 +7,7 @@ Note: Make sure to download the gguf model from [here](https://huggingface.co/se
 # Build Docker Image
 
 ```sh
-docker build -t smart-assistant/embeddings -f backbone/embeddings/Dockerfile .
+docker build -t ai-server/embeddings -f backbone/embeddings/Dockerfile .
 ```
 
 or
