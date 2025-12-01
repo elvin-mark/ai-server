@@ -10,10 +10,8 @@ else
     cd llama.cpp
 fi
 
-mkdir -p build && \
-    cd build &&\
-    cmake .. && \
-    make -j4
+cmake -B build -D BUILD_SHARED_LIBS=OFF
+cmake --build build --config Release -j4
 
 cd /app
 
